@@ -4,6 +4,7 @@ import { FeedbackOptions } from './components/feedbackOptions/FeedbackOptions';
 import { Statistics } from './components/statistics/Statistics';
 import { Notification } from './components/notification/Notification';
 import PropTypes from 'prop-types';
+import css from './App.module.css';
 
 export class App extends Component {
   state = {
@@ -12,9 +13,11 @@ export class App extends Component {
     bad: 0,
   };
 
-  // PropTypes
-  // styles
-  // material-ui
+  static defaultProps = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   static propTypes = {
     good: PropTypes.number,
@@ -44,7 +47,7 @@ export class App extends Component {
     const keyName = Object.keys(this.state);
 
     return (
-      <div>
+      <div className={css.conteiner}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={keyName}
