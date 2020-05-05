@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.module.css"],"names":[],"mappings":"AAAA,sBACE,WAAY,CACZ,aAAc,CACd,iBAAkB,CAClB,sCACF","file":"main.1736a220.chunk.css","sourcesContent":[".conteiner {\n  width: 310px;\n  margin: 0 auto;\n  text-align: center;\n  font-family: Arial, Helvetica, sans-serif;\n}\n"]}
